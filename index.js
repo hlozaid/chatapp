@@ -79,6 +79,14 @@ app.put("/chats/:id", async (req, res) => {
   res.redirect("/chats");
 });
 
+// Destroy Route ------
+app.delete("/chats/:id", async (req, res) => {
+  let { id } = req.params;
+  let deletedChat = await Chat.findByIdAndDelete(id);
+  console.log("Chat Deleted: ", deletedChat);
+  res.redirect("/chats");
+});
+
 app.listen(8080, () => {
   console.log("Server is listening on port 8080");
 });
