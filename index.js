@@ -54,7 +54,7 @@ app.post("/chats", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
-  res.redirect("/chats");
+  res.redirect("/chats"); 
 });
 
 app.listen(8080, () => {

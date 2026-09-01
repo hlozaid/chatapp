@@ -15,6 +15,8 @@ div{
 
 .chat{
     background-color: aliceblue ;
+    height: 220px;
+    width: 300px;
     padding: 20px;
     border-radius: 16px;
     display: inline-block;
