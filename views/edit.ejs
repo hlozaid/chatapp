@@ -7,9 +7,9 @@
   </head>
   <body>
     <h3>Edit Msg <%=chat._id %></h3>
-    <form action="/chats/<%= chat._id%>?_method=PUT" method="POST">
-      <textarea name="msg" rows="6" cols="50"><%= chat.msg %></textarea>
-      <button>Edit</button> 
+    <form action="/chats/<%= chat._id %>?_method=PUT" method="POST">
+      <textarea name="newMsg"><%= chat.msg %></textarea>
+      <button>Edit Chat</button>
     </form>
   </body>
 </html>
